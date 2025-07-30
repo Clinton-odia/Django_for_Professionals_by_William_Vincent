@@ -23,3 +23,6 @@ class HomepageTest(TestCase):
     def test_homepage_url_resolve_homepageview(self):
         view = resolve("/")
         self.assertEqual(view.func.__name__, HomePageView.as_view().__name__)
+
+
+# Chapter 4 completed
