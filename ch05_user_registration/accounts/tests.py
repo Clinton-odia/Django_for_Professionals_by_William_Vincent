@@ -58,3 +58,6 @@ class SignupPageTests(TestCase):
         view = resolve("/accounts/signup/")
 
         self.assertEqual(view.func.__name__, SignupPageView.as_view().__name__)
+
+
+# Chapter 5 Completed
