@@ -1,8 +1,10 @@
 <!-- templates/home.html -->
 {% extends 'base.html' %}
+{% load static %}
 {% block title %}Home{% endblock title %}
 {% block content %}
  <h1>Homepage</h1>
+ <img class="bookcover" src="{% static 'images/bk1.jpg' %}">
  {% if user.is_authenticated %}
  Hi {{ user.email }}!
  <form method="post" action="{% url 'logout' %}">
