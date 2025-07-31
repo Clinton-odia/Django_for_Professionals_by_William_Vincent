@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "a878663469eda837406bf2fa800ddb4daa56951a18298ad1cd7dad715023d4a1"
+            "sha256": "1ed673cea9de7b2a434c1689b015b2980eae54f66607cf369e03546613a8eb17"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -24,6 +24,15 @@
             "markers": "python_version >= '3.9'",
             "version": "==3.9.1"
         },
+        "crispy-bootstrap4": {
+            "hashes": [
+                "sha256:64bf732b27690c7147bfaa154b4b690217bee81c71731daf5da73de00ee01943",
+                "sha256:69066c33fc9c8841cbd8741a7ec99ad9234f12877b4549490031a47c2c1abd79"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.8'",
+            "version": "==2025.6"
+        },
         "django": {
             "hashes": [
                 "sha256:3a9fd52b8dbeae335ddf4a9dfa6c6a0853a1122f1fb071a8d5eca979f73a05c8",
@@ -32,6 +41,15 @@
             "index": "pypi",
             "markers": "python_version >= '3.10'",
             "version": "==5.0"
+        },
+        "django-crispy-forms": {
+            "hashes": [
+                "sha256:5a4b99876cfb1bdd3e47727731b6d4197c51c0da502befbfbec6a93010b02030",
+                "sha256:915e1ffdeb2987d78b33fabfeff8e5203c8776aa910a3a659a2c514ca125f3bd"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.8'",
+            "version": "==2.4"
         },
         "psycopg2-binary": {
             "hashes": [
@@ -115,14 +133,6 @@
             ],
             "markers": "python_version >= '3.8'",
             "version": "==0.5.3"
-        },
-        "tzdata": {
-            "hashes": [
-                "sha256:1a403fada01ff9221ca8044d701868fa132215d84beb92242d9acd2147f667a8",
-                "sha256:b60a638fcc0daffadf82fe0f57e53d06bdec2f36c4df66280ae79bce6bd6f2b9"
-            ],
-            "markers": "python_version >= '2'",
-            "version": "==2025.2"
         }
     },
     "develop": {}
