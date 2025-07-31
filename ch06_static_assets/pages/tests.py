@@ -42,3 +42,6 @@ class AboutPageTest(TestCase):
     def test_aboutpage_url_resolve_aboutpageview(self):
         view = resolve("/about/")
         self.assertEqual(view.func.__name__, AboutPageView.as_view().__name__)
+
+
+# Chapter 6 completed
