@@ -166,13 +166,12 @@ AUTHENTICATION_BACKENDS = (
 )
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 ACCOUNT_SESSION_REMEMBER = True
-ACCOUNT_SIGNUP_FIELDS = ["email", "username*", "password1*"]
-
 ACCOUNT_USERNAME_REQUIRED = False  # new
 ACCOUNT_AUTHENTICATION_METHOD = "email"  # new
 ACCOUNT_EMAIL_REQUIRED = True  # new
 ACCOUNT_UNIQUE_EMAIL = True  # new
 
 ACCOUNT_FORMS = {
-    "signup": "accounts.forms.CustomUserCreationForm",
+    "signup": "accounts.forms.CustomSignupForm",
 }
+DEFAULT_FROM_EMAIL = "admin@djangobookstore.com"
