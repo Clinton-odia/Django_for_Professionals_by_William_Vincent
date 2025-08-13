@@ -11,6 +11,7 @@ services:
       - db
     environment:
       - DJANGO_SECRET_KEY=django-insecure-9$t9$=nlld33qbzgk43v6qnyl0=ejtulqn@*7#!h63b7sehhp1
+      - DJANGO_DEBUG=True
 
   db:
     image: postgres:15
