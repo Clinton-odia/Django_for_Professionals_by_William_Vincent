@@ -1,0 +1,10 @@
+/* Base css */
+
+h1 {
+  color: red;
+}
+
+.bookcover {
+  width: 300;
+  height: 300px;
+}
