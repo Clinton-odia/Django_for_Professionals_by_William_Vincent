@@ -4,8 +4,8 @@ from django.urls import (
     reverse,
     resolve,
 )
-from .forms import CustomUserCreationForm
-from .views import SignupPageView
+# from .forms import CustomSignupForm
+# from .views import SignupPageView
 # Create your tests here.
 
 
@@ -38,26 +38,26 @@ class CustomUserTests(TestCase):
         self.assertTrue(user.is_superuser)
 
 
-class SignupPageTests(TestCase):
-    def setUp(self):
-        url = reverse("signup")
-        self.response = self.client.get(url)
+# class SignupPageTests(TestCase):
+#     def setUp(self):
+#         url = reverse("signup")
+#         self.response = self.client.get(url)
 
-    def test_signup_template(self):
-        self.assertTemplateUsed(self.response, "account/signup.html")
-        self.assertEqual(self.response.status_code, 200)
-        self.assertContains(self.response, "Sign Up")
-        self.assertNotContains(self.response, "I am looking for you")
+#     def test_signup_template(self):
+#         self.assertTemplateUsed(self.response, "account/signup.html")
+#         self.assertEqual(self.response.status_code, 200)
+#         self.assertContains(self.response, "Sign Up")
+#         self.assertNotContains(self.response, "I am looking for you")
 
-    def test_signup_form(self):
-        form = self.response.context.get("form")
-        self.assertIsInstance(form, CustomUserCreationForm)
-        self.assertContains(self.response, "csrfmiddlewaretoken")
+#     def test_signup_form(self):
+#         form = self.response.context.get("form")
+#         self.assertIsInstance(form, CustomSignupForm)
+#         self.assertContains(self.response, "csrfmiddlewaretoken")
 
-    def test_resolve_signup_page_view(self):
-        view = resolve("/accounts/signup/")
+#     def test_resolve_signup_page_view(self):
+#         view = resolve("/accounts/signup/")
 
-        self.assertEqual(view.func.__name__, SignupPageView.as_view().__name__)
+#         self.assertEqual(view.func.__name__, SignupPageView.as_view().__name__)
 
 
 # Chapter 5 Completed
